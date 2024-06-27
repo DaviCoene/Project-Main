@@ -1,14 +1,14 @@
 package jornadadeaprendizagem.renault.modules.providers
 
-import jornadadeaprendizagem.renault.models.entities.Action
 import jornadadeaprendizagem.renault.modules.repositories.ActionRepository
+import models.entities.Action
 import org.springframework.stereotype.Component
 import java.util.*
 
 @Component
 class ActionProvider (private val actionRepository: ActionRepository) {
 
-    fun create(action: Action): Action {
+    fun create(action : Action): Action {
         return actionRepository.save(action)
     }
 
@@ -22,7 +22,7 @@ class ActionProvider (private val actionRepository: ActionRepository) {
         return actionRepository.findById(id).orElseThrow()
     }
 
-    fun update(id: UUID, action: Action): Action {
+    fun update(id: UUID, action : Action): Action {
         return actionRepository.save(action)
     }
 
