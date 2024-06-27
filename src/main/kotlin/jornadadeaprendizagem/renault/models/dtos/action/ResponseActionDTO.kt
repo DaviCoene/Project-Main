@@ -1,8 +1,9 @@
-package models.dtos.action
+package jornadadeaprendizagem.renault.models.dtos.action
 
 import com.fasterxml.jackson.annotation.JsonProperty
 import io.swagger.annotations.ApiModel
-import models.entities.Action
+import io.swagger.annotations.ApiModelProperty
+import jornadadeaprendizagem.renault.models.entities.Action
 import org.springframework.format.annotation.DateTimeFormat
 import java.util.*
 

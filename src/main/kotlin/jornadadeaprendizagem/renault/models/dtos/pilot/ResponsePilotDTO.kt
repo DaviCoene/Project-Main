@@ -1,9 +1,9 @@
-package models.dtos.pilot
+package jornadadeaprendizagem.renault.models.dtos.pilot
 
 import com.fasterxml.jackson.annotation.JsonProperty
 import io.swagger.annotations.ApiModel
 import io.swagger.annotations.ApiModelProperty
-import models.entities.Pilot
+import jornadadeaprendizagem.renault.models.entities.Pilot
 import java.util.*
 
 @ApiModel(
@@ -20,7 +20,7 @@ data class ResponsePilotDTO (
         val name : String
 ) {
 
-    constructor(pilot: models.entities.Pilot) : this(
+    constructor(pilot: Pilot) : this(
             id = pilot.id,
             name = pilot.name
     )

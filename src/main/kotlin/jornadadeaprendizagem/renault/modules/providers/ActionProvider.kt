@@ -1,7 +1,7 @@
 package jornadadeaprendizagem.renault.modules.providers
 
+import jornadadeaprendizagem.renault.models.entities.Action
 import jornadadeaprendizagem.renault.modules.repositories.ActionRepository
-import models.entities.Action
 import org.springframework.stereotype.Component
 import java.util.*
 

@@ -1,6 +1,6 @@
 package jornadadeaprendizagem.renault.modules.providers
 
-import models.entities.Pilot
+import jornadadeaprendizagem.renault.models.entities.Pilot
 import jornadadeaprendizagem.renault.modules.repositories.PilotRepository
 import org.springframework.stereotype.Component
 import java.util.*
@@ -8,7 +8,7 @@ import java.util.*
 @Component
 class PilotProvider (private val pilotRepository: PilotRepository) {
 
-    fun create(pilot: Pilot):Pilot {
+    fun create(pilot: Pilot): Pilot {
         return pilotRepository.save(pilot)
     }
 

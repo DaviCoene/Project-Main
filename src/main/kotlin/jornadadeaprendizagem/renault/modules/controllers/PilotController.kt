@@ -4,8 +4,8 @@ import io.swagger.annotations.Api
 import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.responses.ApiResponse
 import io.swagger.v3.oas.annotations.responses.ApiResponses
-import models.dtos.pilot.RequestPilotDTO
-import models.dtos.pilot.ResponsePilotDTO
+import jornadadeaprendizagem.renault.models.dtos.pilot.RequestPilotDTO
+import jornadadeaprendizagem.renault.models.dtos.pilot.ResponsePilotDTO
 import jornadadeaprendizagem.renault.modules.services.PilotService
 import org.springframework.web.bind.annotation.*
 import java.util.*

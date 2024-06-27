@@ -1,4 +1,4 @@
-package models.dtos.pilot
+package jornadadeaprendizagem.renault.models.dtos.pilot
 
 import com.fasterxml.jackson.annotation.JsonProperty
 import io.swagger.annotations.ApiModel

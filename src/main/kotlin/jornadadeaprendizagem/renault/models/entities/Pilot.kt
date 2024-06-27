@@ -1,12 +1,12 @@
-package models.entities
+package jornadadeaprendizagem.renault.models.entities
 
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
 import jakarta.persistence.EntityListeners
 import jakarta.persistence.Id
 import jakarta.persistence.Table
-import models.dtos.pilot.RequestPilotDTO
-import models.dtos.pilot.ResponsePilotDTO
+import jornadadeaprendizagem.renault.models.dtos.pilot.RequestPilotDTO
+import jornadadeaprendizagem.renault.models.dtos.pilot.ResponsePilotDTO
 import org.springframework.data.jpa.domain.support.AuditingEntityListener
 import java.util.*
 

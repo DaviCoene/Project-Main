@@ -1,0 +1,71 @@
+databaseChangeLog:
+  - changeSet:
+      id: V1_004
+      author: Noah Barros
+      changes:
+        - createTable:
+            tableName: risk
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                      nullable: false
+                      primaryKey: true
+                      autoIncrement: true
+              - column:
+                  name: name_Risk
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: type_Risk
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: area_Responsability
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: date_Entry
+                  type: timestamp
+              - column:
+                  name: consequence
+                  type: varchar(255)
+              - column:
+                  name: project
+                  type: varchar(255)
+              - column:
+                  name: meltier
+                  type: varchar(255)
+              - column:
+                  name: jalon
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: jalon_Future
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: probability_Risk
+                  type: varchar(255)
+              - column:
+                  name: classification_Risk
+                  type: varchar(255)
+              - column:
+                  name: impact_risk
+                  type: varchar(255)
+              - column:
+                  name: impact_Renault
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: situation_Risk
+                  type: varchar(255)
+                  constraints:
+                    nullable: false

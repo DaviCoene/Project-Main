@@ -1,0 +1,42 @@
+databaseChangeLog:
+  - changeSet:
+      id: V1_003
+      author: Noah Barros
+      changes:
+        - createTable:
+            tableName: residual
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                      nullable: false
+                      primaryKey: true
+                      autoIncrement: true
+              - column:
+                  name: probability_RR
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: impact_RR
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: classification_RR
+                  type: varchar(255)
+              - column:
+                  name: action_RR
+                  type: varchar(255)
+              - column:
+                  name: risk_RR
+                  type: varchar(255)
+              - column:
+                  name: date_Resolution
+                  type: timestamp
+              - column:
+                  name: status_RR
+                  type: varchar(255)
+                  constraints:
+                    nullable: false

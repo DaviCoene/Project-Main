@@ -1,8 +1,8 @@
-package models.entities
+package jornadadeaprendizagem.renault.models.entities
 
 import jakarta.persistence.*
-import models.dtos.action.RequestActionDTO
-import models.dtos.action.ResponseActionDTO
+import jornadadeaprendizagem.renault.models.dtos.action.RequestActionDTO
+import jornadadeaprendizagem.renault.models.dtos.action.ResponseActionDTO
 import org.springframework.data.jpa.domain.support.AuditingEntityListener
 import org.springframework.format.annotation.DateTimeFormat
 import java.util.*

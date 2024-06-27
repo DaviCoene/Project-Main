@@ -4,9 +4,9 @@ import io.swagger.annotations.Api
 import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.responses.ApiResponse
 import io.swagger.v3.oas.annotations.responses.ApiResponses
+import jornadadeaprendizagem.renault.models.dtos.action.RequestActionDTO
+import jornadadeaprendizagem.renault.models.dtos.action.ResponseActionDTO
 import jornadadeaprendizagem.renault.modules.services.ActionService
-import models.dtos.action.RequestActionDTO
-import models.dtos.action.ResponseActionDTO
 import org.springframework.web.bind.annotation.*
 import java.util.*
 

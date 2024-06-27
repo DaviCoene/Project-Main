@@ -1,8 +1,8 @@
 package jornadadeaprendizagem.renault.modules.services
 
-import models.dtos.pilot.RequestPilotDTO
-import models.dtos.pilot.ResponsePilotDTO
-import models.entities.Pilot
+import jornadadeaprendizagem.renault.models.dtos.pilot.RequestPilotDTO
+import jornadadeaprendizagem.renault.models.dtos.pilot.ResponsePilotDTO
+import jornadadeaprendizagem.renault.models.entities.Pilot
 import jornadadeaprendizagem.renault.modules.providers.PilotProvider
 import org.springframework.stereotype.Service
 import java.util.UUID
@@ -10,22 +10,15 @@ import java.util.UUID
 @Service
 class PilotService (private val pilotProvider: PilotProvider) {
 
-    fun create(requestPilotDTO: models.dtos.pilot.RequestPilotDTO): models.dtos.pilot.ResponsePilotDTO =
-        models.dtos.pilot.ResponsePilotDTO(pilotProvider.create(models.entities.Pilot((requestPilotDTO))))
+    fun create(requestPilotDTO: RequestPilotDTO): ResponsePilotDTO = ResponsePilotDTO(pilotProvider.create(Pilot((requestPilotDTO))))
 
     //read
-    fun findAll(): List<models.dtos.pilot.ResponsePilotDTO> = pilotProvider.findAll().map {
-        models.dtos.pilot.ResponsePilotDTO(
-            it
-        )
-    }
+    fun findAll(): List<ResponsePilotDTO> = pilotProvider.findAll().map { ResponsePilotDTO(it) }
 
     //read
-    fun findById(id: UUID): models.dtos.pilot.ResponsePilotDTO =
-        models.dtos.pilot.ResponsePilotDTO(pilotProvider.findById(id))
+    fun findById(id: UUID): ResponsePilotDTO = ResponsePilotDTO(pilotProvider.findById(id))
 
-    fun update(id: UUID, requestPilotDTO: models.dtos.pilot.RequestPilotDTO): models.dtos.pilot.ResponsePilotDTO =
-        models.dtos.pilot.ResponsePilotDTO(pilotProvider.update(id, models.entities.Pilot(requestPilotDTO)))
+    fun update(id: UUID, requestPilotDTO: RequestPilotDTO): ResponsePilotDTO = ResponsePilotDTO(pilotProvider.update(id, Pilot(requestPilotDTO)))
 
     fun delete(id: UUID) = pilotProvider.delete(id)
 }
